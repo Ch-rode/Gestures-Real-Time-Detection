@@ -1,0 +1,15 @@
+No module named 'yaml' -- > pip install pyyaml
+
+module 'tensorflow.python.keras.utils.generic_utils' has no attribute 'populate_dict_with_module_objects'
+Paste: 
+def populate_dict_with_module_objects(target_dict, modules, obj_filter):
+  for module in modules:
+    for name in dir(module):
+      obj = getattr(module, name)
+      if obj_filter(obj):
+        target_dict[name] = obj
+at the end of C:\Users\AppData\Local\Programs\Python\Python38\Lib\site-packages\tensorflow\python\keras\utils\generic_utils.py
+
+
+Error: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
+--> https://docs.microsoft.com/en-us/answers/questions/136595/error-microsoft-visual-c-140-or-greater-is-require.html
